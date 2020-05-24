@@ -142,7 +142,7 @@
 										}
 										echo '
 											<div>暱稱：'.$row_sub["nickname"].'</div>
-											<div>內容：'.$row_sub["comments"].'</div>
+											<div>內容：'.htmlspecialchars($row_sub["comments"], ENT_QUOTES, "utf-8").'</div>
 											<div>留言時間：'.$row_sub["created_at"].'</div>
 										';
 										echo '</div>';
